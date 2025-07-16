@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback, useContext } from 'react';
 import { GameContext } from '../context/GameContext';
 import { Difficulty } from '../types';
 
-const STOCKFISH_PATH = '/chess/stockfish/stockfish-nnue-16.js';
+const STOCKFISH_PATH = '/chess/stockfish/stockfish-nnue-16-single.js';
 
 const getSkillLevel = (difficulty: Difficulty) => {
   switch (difficulty) {
