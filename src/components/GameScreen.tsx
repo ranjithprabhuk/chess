@@ -388,7 +388,13 @@ const GameScreen = () => {
                         </Box>
                       )}
                     </Box>
-                    <BlackTimer variant="h6" fontWeight="bold" color="white" turn={game.turn()} isGameOver={!!gameOver} />
+                    <BlackTimer
+                      variant="h6"
+                      fontWeight="bold"
+                      color="white"
+                      turn={game.turn()}
+                      isGameOver={!!gameOver}
+                    />
                   </Box>
                   {/* Captured pieces and points */}
                   <Box sx={{ display: 'flex', gap: 1 }}>
@@ -587,7 +593,13 @@ const GameScreen = () => {
                     <Typography variant="h6" fontWeight="bold" color="text.primary">
                       White
                     </Typography>
-                    <WhiteTimer variant="h6" fontWeight="bold" color="text.primary" turn={game.turn()} isGameOver={!!gameOver} />
+                    <WhiteTimer
+                      variant="h6"
+                      fontWeight="bold"
+                      color="text.primary"
+                      turn={game.turn()}
+                      isGameOver={!!gameOver}
+                    />
                   </Box>
                 </CardContent>
               </Card>
@@ -680,7 +692,13 @@ const GameScreen = () => {
                   <Typography variant="h6" fontWeight="bold" color="text.primary">
                     White
                   </Typography>
-                  <WhiteTimer variant="h6" fontWeight="bold" color="text.primary" turn={game.turn()} isGameOver={!!gameOver} />
+                  <WhiteTimer
+                    variant="h6"
+                    fontWeight="bold"
+                    color="text.primary"
+                    turn={game.turn()}
+                    isGameOver={!!gameOver}
+                  />
                 </Box>
               </CardContent>
             </Card>

@@ -19,7 +19,15 @@ const formatTime = (time: number) => {
   return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 };
 
-const BlackTimer = ({ className, sx, variant = "h6", fontWeight = "bold", color = "text.primary", turn, isGameOver }: BlackTimerProps) => {
+const BlackTimer = ({
+  className,
+  sx,
+  variant = 'h6',
+  fontWeight = 'bold',
+  color = 'text.primary',
+  turn,
+  isGameOver,
+}: BlackTimerProps) => {
   const gameContext = useContext(GameContext);
   const { blackTime, setBlackTime } = gameContext!;
 
@@ -34,13 +42,7 @@ const BlackTimer = ({ className, sx, variant = "h6", fontWeight = "bold", color 
   }, [turn, isGameOver, setBlackTime, blackTime]);
 
   return (
-    <Typography 
-      className={className}
-      sx={sx}
-      variant={variant} 
-      fontWeight={fontWeight} 
-      color={color}
-    >
+    <Typography className={className} sx={sx} variant={variant} fontWeight={fontWeight} color={color}>
       {formatTime(blackTime)}
     </Typography>
   );

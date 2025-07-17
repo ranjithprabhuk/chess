@@ -19,7 +19,15 @@ const formatTime = (time: number) => {
   return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 };
 
-const WhiteTimer = ({ className, sx, variant = "h6", fontWeight = "bold", color = "text.primary", turn, isGameOver }: WhiteTimerProps) => {
+const WhiteTimer = ({
+  className,
+  sx,
+  variant = 'h6',
+  fontWeight = 'bold',
+  color = 'text.primary',
+  turn,
+  isGameOver,
+}: WhiteTimerProps) => {
   const gameContext = useContext(GameContext);
   const { whiteTime, setWhiteTime } = gameContext!;
 
@@ -34,13 +42,7 @@ const WhiteTimer = ({ className, sx, variant = "h6", fontWeight = "bold", color 
   }, [turn, isGameOver, setWhiteTime, whiteTime]);
 
   return (
-    <Typography 
-      className={className}
-      sx={sx}
-      variant={variant} 
-      fontWeight={fontWeight} 
-      color={color}
-    >
+    <Typography className={className} sx={sx} variant={variant} fontWeight={fontWeight} color={color}>
       {formatTime(whiteTime)}
     </Typography>
   );
