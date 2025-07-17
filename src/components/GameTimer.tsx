@@ -1,5 +1,5 @@
 import { useEffect, useContext } from 'react';
-import { Typography, Box, Paper, Avatar, Chip } from '@mui/material';
+import { Typography, Box, Avatar, Chip } from '@mui/material';
 import { Timer as TimerIcon } from '@mui/icons-material';
 import { GameContext } from '../context/GameContext';
 
